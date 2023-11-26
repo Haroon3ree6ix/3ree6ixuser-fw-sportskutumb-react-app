@@ -9,7 +9,7 @@ import {
   usePagination,
 } from "react-table"
 import { Table, Row, Col, Button } from "reactstrap"
-import JobListGlobalFilter from "./GlobalSearchFilter"
+import JobListGlobalFilter from "./GlobalSearchFilterEvent"
 import { Link } from "react-router-dom"
 
 // Define a default UI for filtering
@@ -55,7 +55,7 @@ function GlobalFilter({
   )
 }
 
-const TableContainer = ({
+const TableContainerEvent = ({
   columns,
   data,
   isGlobalFilter,
@@ -97,7 +97,7 @@ const TableContainer = ({
     {
       columns,
       data,
-      defaultColumn: { Filter: DefaultColumnFilter },
+      // defaultColumn: { Filter: DefaultColumnFilter },
       initialState: {
         pageIndex: 0,
         pageSize: customPageSize,
@@ -208,7 +208,7 @@ const TableContainer = ({
                     <div className="m-0" {...column.getSortByToggleProps()}>
                       {column.render("Header")}
                     </div>
-                    <Filter column={column} />
+                    {/* <Filter column={column} /> */}
                   </th>
                 ))}
               </tr>
@@ -271,8 +271,8 @@ const TableContainer = ({
   )
 }
 
-TableContainer.propTypes = {
+TableContainerEvent.propTypes = {
   preGlobalFilteredRows: PropTypes.any,
 }
 
-export default TableContainer
+export default TableContainerEvent

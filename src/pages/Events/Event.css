@@ -1,0 +1,30 @@
+/* Event.css
+
+/* Style the container (FormGroup) */
+.custom-dropdown {
+    width: 400px;
+   
+  }
+  .custom-dropdown-text {
+    text-align: left; /* Align text to the left (start) */
+  }
+  
+
+  /* Event.css */
+
+/* Style for form fields */
+.form-field {
+  margin-bottom: 1rem; /* Adjust as needed */
+}
+
+/* Style for checkbox labels */
+.checkbox-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style for the checkbox */
+.checkbox-input {
+  margin-left: 1rem; /* Adjust as needed to control the spacing between the label and the checkbox */
+}

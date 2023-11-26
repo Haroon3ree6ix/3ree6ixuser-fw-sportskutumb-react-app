@@ -146,7 +146,7 @@ const SidebarContent = props => {
         <div id="sidebar-menu">
           <ul className="metismenu list-unstyled" id="side-menu">
             <li className="menu-title">{props.t("Menu")} </li>
-            <li>
+            {/* <li>
               <Link to="/#" className="has-arrow">
                 <i className="bx bx-home-circle"></i>
                 <span>{props.t("Dashboards")}</span>
@@ -157,6 +157,34 @@ const SidebarContent = props => {
                 </li>
                 <li>
                   <Link to="#">{props.t("Saas")}</Link>
+                </li>
+                <li>
+                  <Link to="#">{props.t("Crypto")}</Link>
+                </li>
+                <li>
+                  <Link to="#">{props.t("Blog")}</Link>
+                </li>
+                <li>
+                  <Link to="#">
+                    {props.t("Job")}
+                  </Link>
+                </li>
+              </ul>
+            </li> */}
+            <li>
+              <Link to="/#" className="has-arrow">
+                <i className="bx bx-home-circle"></i>
+                <span>{props.t("Sports")}</span>
+              </Link>
+              <ul className="sub-menu">
+                <li>
+                  <Link to="/eventlist">{props.t("Events")}</Link>
+                </li>
+                <li>
+                  <Link to="/event-grid">{props.t("Events Grid")}</Link>
+                </li>
+                <li>
+                  <Link to="/event">{props.t("Generate Event")}</Link>
                 </li>
                 <li>
                   <Link to="#">{props.t("Crypto")}</Link>

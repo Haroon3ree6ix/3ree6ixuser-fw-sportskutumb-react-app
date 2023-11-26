@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Col } from 'reactstrap';
 
-
+//Date Picker
 // import DatePicker from "react-datepicker";
 // import "react-datepicker/dist/react-datepicker.css";
 
@@ -31,13 +31,13 @@ const JobListGlobalFilter = ({ setGlobalFilter }) => {
                     <option value="Close">Close</option>
                 </select>
             </Col>
-            <Col xxl={2} lg={4}>
+            {/* <Col xxl={2} lg={4}>
                 <select className="form-control select2 mb-3 mb-xxl-0" defaultValue="Select Type" onChange={(e) => handleSelectTime(e.target)}>
                     <option disabled>Select Type</option>
                     <option value="Full Time">Full Time</option>
                     <option value="Part Time">Part Time</option>
                 </select>
-            </Col>
+            </Col> */}
             <Col xxl={2} lg={3}>
                 <div id="datepicker1">
                     <FlatPickr
